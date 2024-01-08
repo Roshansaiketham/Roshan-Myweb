@@ -111,6 +111,21 @@ function scrollActive() {
 
 window.addEventListener("scroll", scrollActive);
 
+// Alert users to use the desktop site
+function alertDesktopSite() {
+  alert("For the best experience, please use the desktop version of the site.");
+}
+
+// Check if the user is on a mobile device and display the alert
+function checkMobileDevice() {
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+    alertDesktopSite();
+  }
+}
+
+// Call the checkMobileDevice function when the page loads
+window.addEventListener("load", checkMobileDevice);
+
 /* ----- CODEPEN IMPORT FUNCTION ----- */
 function importCodePen() {
   // Add your CodePen import logic here
