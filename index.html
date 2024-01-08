@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Add favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portfolio | Roshansaiketam</title>
+    <style>
+        .skills-list {
+            display: flex;
+            gap: 10px;
+        }
+
+        .skills-list span {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+  .skills-box {
+    margin: 20px;
+  }
+
+  .skills-header h3 {
+    text-align: center;
+  }
+
+  .skills-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .skills-list span {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Add this line for the blur effect */
+  }
+
+  .skills-list span i {
+    margin-right: 5px;
+  }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Roshan</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+           <!-- ... (previous code) ... -->
+
+          <div class="nav-button">
+              <a href="https://cdn.glitch.global/43d77c74-732f-4c5b-869c-2caea7b6be27/My%20resume.pdf?v=1704384102072" download class="btn">Download CV <i class="uil uil-file-alt"></i></a>
+          </div>
+
+<!-- ... (remaining code) ... -->
+
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+ 
+            
+        </nav>
+
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Roshansaiketam</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Experienced frontend developer with a passion for creating visually stunning
+                            and user-friendly websites.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn blue-btn">Hire Me</button>
+                            <a href="https://cdn.glitch.global/43d77c74-732f-4c5b-869c-2caea7b6be27/My%20resume.pdf?v=1704384102072" download class="btn">Download CV <i class="uil uil-file-alt"></i></a>
+                    </div>
+
+                    <div class="social_icons">
+                        <a href="https://www.instagram.com/roshansai_ketam/"  class="icon"><i class="uil uil-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/roshansai-ketham-0603b7230/" class="icon"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://twitter.com/RoshansaiKetham"  class="icon"><i class="uil uil-twitter"></i></a>
+                        <a href="https://github.com/Roshansaiketham"  class="icon"><i class="uil uil-github-alt"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="https://cdn.glitch.global/43d77c74-732f-4c5b-869c-2caea7b6be27/profile.png?v=1700796957307" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
+
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me & My Skills</h1>
+                </div>
+                  <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>My introduction</h3>
+                            <p>Passionate technophile pursuing a Bachelor of Technology, specializing in cybersecurity, 
+                               deep learning, and prompt engineering. A creative problem solver with a focus on optimizing 
+                               efficiency and a commitment to making meaningful contributions to the dynamic world of technology
+                               through innovative web solutions. Driven by insatiable curiosity, I strive to navigate and contribute
+                               to the ever-evolving technological landscape.
+                          </p><br>
+                           <h3>About My Education</h3>
+                            <p>
+                                <div class="container">
+                                    <div class="skill" id="html">
+                                        <p>
+                                        I pursing my Bachelor of Technology (B.Tech) degree at
+                                        Aditya Institute of Technology and Management in Tekkali,
+                                        India, from 2021 to 2025
+                                          </p><br>
+                                      <div class="bar"></div>
+                                      <span class="label">B.TECH @7.98 CGPA</span>
+                                    </div>
+                                    
+                                    <div class="skill" id="css">
+                                        <p>
+                                            I completed my intermediate education at 
+                                            Srichaitanya Junior College in 2021
+                                          </p><br>
+                                      <div class="bar"></div>
+                                     
+                                      <span class="label">Intermediate @62 Percentage</span>
+                                    </div>
+                                    <div class="skill" id="js">
+                                        <p>
+                                            I completed my Tenth education at Srichaitanya
+                                            Techno School in 2021
+                                          </p><br>
+                                      <div class="bar"></div><br>
+                                      
+                                      <span class="label">Tenth @ 92 Percentage</span>
+                                    </div>
+                                  </div>
+                            </p>
+                           </div>
+                      
+                    </div>
+                   <div class="col">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span style="background-color: darkorange;"><i class="fab fa-html5"></i> HTML</span>
+                            <span style="background-color: blue;"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span style="background-image: url('https://cdn-icons-png.flaticon.com/512/5968/5968292.png');"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span style="background-image: url('path-to-php-image.jpg');"><i class="fab fa-php"></i> PHP</span>
+                            <span style="background-color: red;"><i class="fab fa-java"></i> JAVA</span>
+                            <span style="background-color: green;"><i class="fab fa-python"></i> Python</span>
+                            <span style="background-color: black;"><i class="fas fa-cogs"></i> C</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Database & OS</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span style="background-color: navy;"><i class="fas fa-database"></i> MySQL</span>
+                            <span style="background-color: rgb(48, 69, 105);"><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span style="background-color: lightgreen;"><i class="fas fa-database"></i> MongoDB</span>
+                            <span style="background-color: rgb(86, 161, 192);"><i class="fab fa-linux"></i> Linux</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- PROJECT BOX ---------------- -->
+
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+
+                </div>
+                
+                <div class="project-container">
+                    <div class="project-box" onclick="redirectToURL('https://courses-page.glitch.me/')">
+                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                        <h3>Certifications</h3>
+                        <label>Completeions Courses</label>
+                    </div>
+                    <div class="project-box" onclick="redirectToURL('https://roshan-projects.glitch.me/')">
+      <i class="uil uil-briefcase-alt"></i>
+      <h3>Completed</h3>
+      <label>3 Finished Projects</label>
+    </div>
+
+    <script>
+      function redirectToURL(url) {
+        window.location.href = url;
+      }
+    </script>
+    
+                    
+                </div>
+            </section>
+
+            <!-- -------------- CONTACT BOX ---------------- -->
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                    <span>Do you have a project in your mind, contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: roshansaiketham67@gmail.com
+                              
+            
+                              
+                          
+                          </p>
+                            <p><i class="uil uil-phone"></i> +91 9494743688</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <form action="https://formsubmit.co/roshansaiketham67@gmail.com" method="POST">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="https://roshansaiketham.github.io/Roshan-myweb//success.html">
+                                <div class="form-inputs">
+                                    <input type="text" class="input-field" name="name" placeholder="Name" required>
+                                    <input type="email" class="input-field" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="text-area">
+                                    <textarea name="message" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Roshansaiketam.</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                    <a href="https://www.instagram.com/roshansai_ketam/"  class="icon"><i class="uil uil-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/roshansai-ketham-0603b7230/" class="icon"><i class="uil uil-linkedin-alt"></i></a>
+                    <a href="https://twitter.com/RoshansaiKetham"  class="icon"><i class="uil uil-twitter"></i></a>
+                    <a href="https://github.com/Roshansaiketham"  class="icon"><i class="uil uil-github-alt"></i></a>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Roshansaiketam</a> - All rights reserved
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
