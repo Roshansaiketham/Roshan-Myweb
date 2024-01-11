@@ -8,11 +8,10 @@ function myMenuFunction() {
     menuBtn.className = "nav-menu";
   }
 }
-// Update the width of the progress bars based on the provided percentages
+
 document.getElementById("html").querySelector(".bar").style.width = "79%";
 document.getElementById("css").querySelector(".bar").style.width = "60%";
 document.getElementById("js").querySelector(".bar").style.width = "92%";
-
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () {
   headerShadow();
@@ -110,21 +109,6 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
-
-// Alert users to use the desktop site
-function alertDesktopSite() {
-  alert("For the best experience, please use the desktop version of the site.");
-}
-
-// Check if the user is on a mobile device and display the alert
-function checkMobileDevice() {
-  if (/Mobi|Android/i.test(navigator.userAgent)) {
-    alertDesktopSite();
-  }
-}
-
-// Call the checkMobileDevice function when the page loads
-window.addEventListener("load", checkMobileDevice);
 
 /* ----- CODEPEN IMPORT FUNCTION ----- */
 function importCodePen() {
