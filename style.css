@@ -91,7 +91,7 @@ nav {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  width: 115%;
+  width: 116%;
   height: 90px;
   line-height: 90px;
   background: var(--body-color);
