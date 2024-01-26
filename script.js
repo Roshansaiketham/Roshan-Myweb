@@ -85,3 +85,15 @@ document
 if (window.innerWidth <= 767) {
   alert("For the best experience, please view this site on a desktop or turn on desktop site mode on your mobile device.");
 }
+window.onload = function() {
+            checkScreenSize();
+            window.addEventListener('resize', checkScreenSize);
+        };
+
+        function checkScreenSize() {
+            var screenWidth = window.innerWidth;
+
+            if (screenWidth <= 768) { // You can adjust this value based on your design
+                alert("For better performance, consider switching to desktop view.");
+            }
+        }
