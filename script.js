@@ -97,3 +97,22 @@ window.onload = function() {
                 alert("For better performance, consider switching to desktop view.");
             }
         }
+window.addEventListener('DOMContentLoaded', () => {
+    const mobileAlert = document.getElementById('mobileAlert');
+    
+    // Check if the viewport width is less than a certain value (e.g., 600 pixels)
+    const showMobileAlert = () => {
+        if (window.innerWidth < 600) {
+            mobileAlert.style.display = 'block';
+        } else {
+            mobileAlert.style.display = 'none';
+        }
+    };
+
+    // Initial check on page load
+    showMobileAlert();
+
+    // Listen for window resize events
+    window.addEventListener('resize', showMobileAlert);
+});
+
