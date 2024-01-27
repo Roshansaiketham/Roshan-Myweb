@@ -21,6 +21,17 @@
   --third-color: rgb(192, 166, 49);
   --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
+#mobileAlert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
 
 /* ----- BASE ----- */
 * {
